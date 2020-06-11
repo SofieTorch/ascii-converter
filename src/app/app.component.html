@@ -1,0 +1,17 @@
+<div class="container mt-4">
+
+  <h1>Conversor de ASCII :D</h1>
+
+  <h6>Ingresa una frase o codigo:</h6>  
+  <input type="text" class="form-control" [(ngModel)]="entrada">
+  <h6>Convertir a:</h6>
+  <button type="button" class="m-2 btn btn-primary" (click)="convertirATexto()">Texto</button>
+  <button type="button" class="m-2 btn btn-primary" (click)="convertirAAscii()">Codigo ASCII</button>
+
+  <div *ngIf="resultado">
+    <h6>Resultado:</h6>
+    <p>{{ resultado }}</p>
+  </div>
+
+</div>
+
